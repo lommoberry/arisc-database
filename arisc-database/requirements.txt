@@ -1,0 +1,13 @@
+Django
+
+django-bootstrap-v5
+
+django-bootstrap-icons
+
+nltk
+
+openpyxl
+
+python-dateutil
+
+datetime
