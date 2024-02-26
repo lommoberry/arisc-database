@@ -7,6 +7,7 @@ Description
 * Database for Balkan Academic research
 
 Instructions
+pip install django mysqlclient
 * cd arisc-database
 * cd arisc-database
 * pip install -r requirements.txt
