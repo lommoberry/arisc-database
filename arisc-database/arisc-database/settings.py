@@ -57,8 +57,12 @@ SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(SETTINGS_PATH, 'templates',
-                 os.path.join(BASE_DIR, 'addJournal', 'templates', 'addJournal'),)
+        # 'DIRS': [os.path.join(SETTINGS_PATH, 'templates',
+        #          os.path.join(BASE_DIR, 'add','templates','add','editing','search_engine'),)
+        # ],
+		'DIRS': [
+            os.path.join(BASE_DIR, 'templates'),  # Global templates directory (if you have one)
+            # If you have other directories outside of apps where you want to store templates, add them here.
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -85,7 +89,7 @@ DATABASES = {
 		'USER': 'xpt3bn',
 		'PASSWORD': 'password',
         'HOST': 'localhost',
-        'PORT': '8080',
+        # 'PORT': '7000',
     }
 }
 
@@ -127,6 +131,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
